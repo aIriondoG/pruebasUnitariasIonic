@@ -1,0 +1,18 @@
+1.-Configuracion de entorno
+
+	->npm install karma karma-chrome-launcher karma-jasmine karma-jasmine-html-reporter karma-mocha-reporter karma-sourcemap-loader karma-webpack null-loader jasmine ts-loader ts-node angular2-template-loader html-loader @types/jasmine @types/jasminewd2 --save-dev
+	->npm i webpack --save-dev
+
+2.-Crear en carpeta testing en root e introducir los siguientes ficheros:
+
+	->karma-test-shim.js
+	->karma.conf.js
+	->webpack.test.js
+	
+3.-En package.json añadir en el apartado scripts;
+
+	->"test": "karma start ./testing/karma.conf.js"
+	
+4.-Crear el/los test/s con sufijo .spec.ts-loader
+
+LINK: https://blog.ng-classroom.com/blog/ionic2/unit-test-config-ionic/
